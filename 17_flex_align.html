@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align</title>
+  <style>
+    .container{
+      background: #555;
+      display: flex;
+      flex-wrap: wrap;
+      /* align item horizontal */
+      justify-content: space-evenly;
+      /*
+        OPTIONS
+        flex-start 
+        flex-end
+        center
+        space-between
+        space-around
+        space-evenly 
+       */
+       /* align item horizontal(height is mandatory) */
+       height: 600px;
+       align-items: flex-start;
+       /*
+        OPTIONS
+        flex-start 
+        flex-end
+        center
+        baseline
+        stretch
+       */
+       /* align items vertical where extra space */
+       align-content: flex-start ;
+       /*
+        OPTIONS
+        flex-start 
+        flex-end
+        center
+        space-between
+        space-around
+        stretch
+       */
+    }
+
+    .item-2{
+      align-self: center;
+       /*
+        OPTIONS
+        flex-start 
+        flex-end
+        center
+        baseline
+        stretch
+       */
+    }
+    .item{
+       background: #f4f4f4;
+       border: #ccc solid 1px;
+       padding: 1rem;
+       text-align: center;
+       margin: 0.5rem;
+       flex-basis: 200px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  </div>
+</body>
+</html>
